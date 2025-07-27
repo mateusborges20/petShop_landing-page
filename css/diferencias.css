@@ -1,71 +1,77 @@
-
 .container-diferencial {
   background: #f2f6f9;
+  padding: 40px 20px;
 }
 
 .container-diferencial h2 {
   text-align: center;
   margin-bottom: 30px;
-  font-family: 'lato';
+  font-family: "lato";
   font-weight: 600;
-
-
 }
 
 .diferenciais {
-  max-width: 1800px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 2rem;
 }
 
 .diferenciais .list-diferenciais {
   display: flex;
-  gap: 80px;
+  flex-wrap: wrap;
+  gap: 60px;
   justify-content: center;
 }
 
 .titulo-diferencial {
   font-size: 4rem;
-  font-family: 'lato', sans-serif;
+  font-family: "lato", sans-serif;
   font-style: italic;
   padding-top: 40px;
   color: #3b3b3b;
-}
-
-.list-diferenciais h3 {
-  color: #3b3b3b;
-  margin-bottom: 0.4rem;
-}
-.list-diferenciais img {
-  margin-bottom: 0.4rem;
-}
-
-.list-diferenciais p {
-  color: #595959;
-  max-width: 50ch;
   text-align: center;
-}
-
-.list-diferenciais li {
-  border: 1px solid #d3dce9 ;
-  padding: 40px;
-  border-top-left-radius: 80px;
-  border-bottom-right-radius: 80px;
-  background:#d3dce9;
-}
-
-
-.list-diferenciais li {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .titulo-diferencial span {
   text-decoration: underline;
 }
 
+.list-diferenciais li {
+  border: 1px solid #d3dce9;
+  padding: 50px 40px;
+  border-top-left-radius: 80px;
+  border-bottom-right-radius: 80px;
+  background: #d3dce9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 320px;
+  max-width: 400px;
+  min-width: 300px;
+  box-sizing: border-box;
+}
+
+.list-diferenciais img {
+  margin-bottom: 0.8rem;
+  max-width: 100%;
+  height: auto;
+}
+
+.list-diferenciais h3 {
+  color: #3b3b3b;
+  margin-bottom: 0.6rem;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.list-diferenciais p {
+  color: #595959;
+  max-width: 45ch;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.5;
+}
 
 @media (max-width: 1000px) {
   .diferenciais .list-diferenciais {
@@ -78,9 +84,10 @@
     height: 150px;
   }
 
-
   .list-diferenciais li {
     padding: 20px;
+    max-width: 100%;
+    min-width: unset;
   }
 }
 
