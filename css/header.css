@@ -83,6 +83,7 @@ header nav.opened {
 header nav ul {
   display: flex;
   flex-direction: column;
+
   padding-bottom: 2rem;
 }
 
@@ -104,23 +105,30 @@ header nav a:hover {
   cursor: pointer;
 }
 
-@media (width > 900px) {
+@media (min-width: 900px) {
+  header nav {
+    max-height: none;
+    overflow: visible;
+  }
+
   header .menu-opener {
     display: none;
   }
 
-  header .container {
+  /* Aqui está o container que DEVE alinhar logo + menu lado a lado */
+  .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 
-  header nav {
-    max-height: 100vh;
-  }
-
   header nav ul {
+    display: flex;
+    align-items: center;
     flex-direction: row;
-    padding-bottom: 0;
+    gap: 2rem;
+    padding: 0;
+    margin: 0;
+    list-style: none;
   }
 }
