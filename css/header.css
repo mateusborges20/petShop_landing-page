@@ -115,6 +115,19 @@ header nav a:hover {
     display: none;
   }
 
+  /* Remove o highlight de toque no Chrome, Android, Safari */
+  .menu-opener,
+  .menu-opener * {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  /* Remove fundo azul no foco (quando clicar ou tabular) */
+  .menu-opener:focus,
+  .menu-opener:active {
+    outline: none; /* Remove a borda de foco */
+    background: transparent; /* Garante fundo transparente */
+  }
+
   /* Aqui está o container que DEVE alinhar logo + menu lado a lado */
   .container {
     display: flex;
