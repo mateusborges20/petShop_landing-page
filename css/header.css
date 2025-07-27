@@ -6,6 +6,11 @@ header {
   background: var(--background-intro);
 }
 
+.container {
+  max-width: 1800px;
+  margin: 0 auto;
+}
+
 .banner {
   display: block;
   background: yellow;
@@ -15,7 +20,7 @@ header {
 }
 
 .banner:hover {
-  opacity: 0.8;
+  background:#caf;
   cursor: pointer;
 }
 
@@ -101,7 +106,7 @@ header nav a {
 }
 
 header nav a:hover {
-  opacity: 0.8;
+  color: #cc4e23;
   cursor: pointer;
 }
 

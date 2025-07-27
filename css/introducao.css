@@ -1,0 +1,110 @@
+.container-hero {
+  display: grid;
+  gap: 40px;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.hero {
+  background-color: #eededf;
+}
+
+.conteudo-hero p:first-child {
+  font-family: "lato", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 4rem;
+}
+
+.cor-amor {
+  color: var(--cor-primaria);
+}
+
+.descricao {
+  font-family: "lato", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1.2rem;
+  color: #000;
+}
+
+.container-hero button {
+  padding: 12px 24px;
+  background: none;
+  border: 2px solid var(--cor-primaria);
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: all 0.8s ease;
+}
+
+.container-hero button:hover {
+  background-color: #ff8a5a;
+  cursor: pointer;
+}
+
+.container-hero button {
+  display: flex;
+  white-space: nowrap;
+  align-items: center;
+  grid-gap: 15px;
+}
+
+.conteudo-hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 30px;
+}
+
+@media (max-width: 1000px) {
+  .container-hero {
+    grid-template-columns: 1fr;
+    gap: 0px;
+  }
+
+  .conteudo-hero {
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .img-hero {
+    justify-self: center;
+  }
+
+  .conteudo-hero p:first-child {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .conteudo-hero p:first-child {
+    font-size: 2rem;
+  }
+
+  .img-hero img {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 340px) {
+  .img-hero img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .conteudo-hero p:first-child {
+    font-size: 1.5rem;
+  }
+
+  .descricao {
+    font-size: 1.2rem;
+  }
+
+
+}
