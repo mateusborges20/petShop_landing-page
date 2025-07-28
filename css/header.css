@@ -1,6 +1,6 @@
 header {
   position: sticky;
-  inset: 0 0 auto 0;
+  top: 0;
   z-index: 10;
   box-shadow: 0 0 5px #ccc;
   background: var(--background-intro);
@@ -20,7 +20,7 @@ header {
 }
 
 .banner:hover {
-  background:#caf;
+  background: #caf;
   cursor: pointer;
 }
 
@@ -139,7 +139,6 @@ header nav a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
   }
 
   header nav ul {

@@ -16,6 +16,19 @@ meuOpener.addEventListener("click", () => {
     meuOpener.querySelector(".hamburguer-icon").style.display = "none";
   }
 });
+const linksInternos01 = document.querySelectorAll('.js-menu a[href^= "#"]');
+
+function handleClick() {
+  if (nav.classList.contains("opened")) {
+    nav.classList.remove("opened");
+    meuOpener.querySelector(".close-icon").style.display = "none";
+    meuOpener.querySelector(".hamburguer-icon").style.display = "flex";
+  }
+}
+
+linksInternos01.forEach((link) => {
+  link.addEventListener("click", handleClick);
+});
 
 //scroll suave
 const linksInternos = document.querySelectorAll('.js-menu a[href^= "#"]');
