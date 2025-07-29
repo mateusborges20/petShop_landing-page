@@ -55,3 +55,4 @@ function scrollSection(event) {
 linksInternos.forEach((link) => {
   link.addEventListener("click", scrollSection);
 });
+

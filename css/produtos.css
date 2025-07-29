@@ -1,7 +1,8 @@
 /* Seção Produtos */
 .bg-produtos {
   background-color: #f2f6f9;
-  padding: 60px 20px;
+  padding: 40px 20px;
+  
 }
 
 .container-produtos {
@@ -9,11 +10,12 @@
   margin: 0 auto;
 }
 
-.container-produtos h2 {
+
+.titulo-servicos {
+  font-size: 3rem;
+  margin-bottom: 2rem;
   text-align: center;
-  font-size: 2.5rem;
-  margin-bottom: 40px;
-  font-family: "Lato", sans-serif;
+  padding-bottom: 20px;
 }
 
 /* Grade de produtos */
@@ -101,6 +103,10 @@
   .produto-item {
     width: 100%;
     max-width: 300px;
+  }
+
+  .titulo-servicos {
+    padding-bottom: 0px;
   }
 }
 

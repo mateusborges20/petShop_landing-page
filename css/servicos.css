@@ -14,9 +14,10 @@
   border-radius: 1rem;
 }
 
-.titulo-servicos {
+.titulo-servicos.titulose {
   font-size: 3rem;
   margin-bottom: 2rem;
+  margin-bottom: 20px;
 }
 
 .lista-servicos {
