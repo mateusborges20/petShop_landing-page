@@ -1,0 +1,123 @@
+/* Seção Produtos */
+.bg-produtos {
+  background-color: #f2f6f9;
+  padding: 60px 20px;
+}
+
+.container-produtos {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container-produtos h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  font-family: "Lato", sans-serif;
+}
+
+/* Grade de produtos */
+.flex-produtos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+/* Produto individual */
+.produto-item {
+  position: relative;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 260px;
+  transition: transform 0.3s ease;
+}
+
+.produto-item:hover {
+  transform: translateY(-5px);
+}
+
+.produto-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+.produto-item p {
+  font-size: 1.4rem;
+  max-width: 23ch;
+  line-height: 1.4;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  margin: 5px 0;
+}
+
+/* Destaque no preço */
+.produto-item p:nth-of-type(2) {
+  color: #d99e00; /* tom mais forte */
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin-top: 5px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);
+}
+
+/* Botão */
+.produto-item button {
+  margin-top: 10px;
+  padding: 0.8rem 1.8rem;
+  background-color: #eac158;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.produto-item button:hover {
+  background-color: #d3dce9;
+}
+
+/* Etiqueta de desconto */
+.detalhe {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #eac158;
+  color: #000;
+  font-weight: bold;
+  padding: 5px 10px;
+  font-size: 0.9rem;
+  border-radius: 6px;
+  font-family: 'Roboto';
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .produto-item {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container-produtos h2 {
+    font-size: 2rem;
+  }
+
+  .produto-item p {
+    font-size: 1.2rem;
+  }
+
+  .produto-item p:nth-of-type(2) {
+    font-size: 1.4rem;
+  }
+
+  .produto-item button {
+    font-size: 0.95rem;
+  }
+}

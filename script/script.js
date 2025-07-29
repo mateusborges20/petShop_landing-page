@@ -36,14 +36,18 @@ const linksInternos = document.querySelectorAll('.js-menu a[href^= "#"]');
 function scrollSection(event) {
   event.preventDefault();
   const href = event.currentTarget.getAttribute("href");
-
   const section = document.querySelector(href);
 
-  //verificação se a section existe
   if (section) {
-    section.scrollIntoView({
+    const header = document.querySelector("header");
+    const headerHeight = header.offsetHeight || 100; // pega a altura real do header
+
+    const sectionTop = section.getBoundingClientRect().top + window.scrollY;
+    const offsetTop = sectionTop - headerHeight;
+
+    window.scrollTo({
+      top: offsetTop,
       behavior: "smooth",
-      block: "start",
     });
   }
 }
