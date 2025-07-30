@@ -56,17 +56,26 @@ linksInternos.forEach((link) => {
   link.addEventListener("click", scrollSection);
 });
 
-//accordion javascript
+//accordion-list
 
-const accordionList = document.querySelectorAll(".list-faq dt");
+function initAccordion() {
+  //accordion javascript
 
-function activeAccordion() {
-  if (accordionList.length) {
-    this.classList.toggle("ativo");
-    this.nextElementSibling.classList.toggle("ativo");
+  const accordionList = document.querySelectorAll(".list-faq dt");
+
+  accordionList[0].classList.add("ativo");
+  accordionList[0].nextElementSibling.classList.add("ativo");
+
+  function activeAccordion() {
+    if (accordionList.length) {
+      this.classList.toggle("ativo");
+      this.nextElementSibling.classList.toggle("ativo");
+    }
   }
+
+  accordionList.forEach((item) => {
+    item.addEventListener("click", activeAccordion);
+  });
 }
 
-accordionList.forEach((item) => {
-  item.addEventListener("click", activeAccordion);
-});
+initAccordion();
