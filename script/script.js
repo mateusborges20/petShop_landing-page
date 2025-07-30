@@ -56,3 +56,17 @@ linksInternos.forEach((link) => {
   link.addEventListener("click", scrollSection);
 });
 
+//accordion javascript
+
+const accordionList = document.querySelectorAll(".list-faq dt");
+
+function activeAccordion() {
+  if (accordionList.length) {
+    this.classList.toggle("ativo");
+    this.nextElementSibling.classList.toggle("ativo");
+  }
+}
+
+accordionList.forEach((item) => {
+  item.addEventListener("click", activeAccordion);
+});
